@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader'; 
 
 class App extends Component {
   
@@ -7,6 +8,8 @@ class App extends Component {
   }
 
   render() {
+
+    const count = this.state.count;
     return (
       <div>
         <h1>Hello world!</h1>
@@ -18,4 +21,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default hot(module)(App);
